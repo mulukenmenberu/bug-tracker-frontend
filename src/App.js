@@ -2,7 +2,7 @@ import './styles/styles.css';
 import LeftPane from './components/LeftPane'
 import RightPane from './components/RightPane'
 import MainPane from './components/MainPane'
-import Table from './components/Table'
+import TableData from './components/Table'
 function App() {
 
   return (
@@ -14,7 +14,10 @@ function App() {
         <input type="text" placeholder='Search anything here'></input>
       </div>
       <MainPane/>
-      <Table/>
+      <div className= "table-container">
+      <TableData/>
+      </div>
+      
     </div>
     <RightPane/>
    </div>

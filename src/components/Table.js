@@ -1,23 +1,85 @@
-const Table = ()=>{
-    return (
-        <div  className="table">
-            <table>
-                <tr>
-                    <th>No</th>
-                    <th>Issue ID</th>
-                    <th>Issue Name</th>
-                    <th>Description</th>
-                    <th>Assignee</th>
-                </tr>
-                <tr>
-                    <td>No</td>
-                    <td>Issue ID</td>
-                    <td>Issue Name</td>
-                    <td>Description</td>
-                    <td>Assignee</td>
-                </tr>
-            </table>
-        </div>
-    )
+import "bootstrap/dist/css/bootstrap.css";
+import React from "react";
+import { Col, Row, Table } from "react-bootstrap";
+import {
+  DatatableWrapper,
+  Filter,
+  Pagination,
+  PaginationOptions,
+  TableBody,
+  TableHeader
+} from "react-bs-datatable";
+
+import TABLE_BODY from "./data.json";
+
+// Create table headers consisting of 4 columns.
+const STORY_HEADERS = [
+  {
+    prop: "name",
+    title: "Name",
+    isFilterable: true
+  },
+  {
+    prop: "username",
+    title: "Username"
+  },
+  {
+    prop: "location",
+    title: "Location"
+  },
+  {
+    prop: "date",
+    title: "Last Update"
+  },
+  {
+    prop: "score",
+    title: "Score",
+    isSortable: true
+  }
+];
+
+// Then, use it in a component.
+export default function TableData() {
+  return (
+    <DatatableWrapper
+      body={TABLE_BODY}
+      headers={STORY_HEADERS}
+      paginationOptionsProps={{
+        initialState: {
+          rowsPerPage: 3,
+          options: [3]
+        }
+      }}
+    >
+      <Row className="mb-4 p-2">
+        <Col
+          xs={12}
+          lg={4}
+          className="d-flex flex-col justify-content-end align-items-end"
+        >
+          <Filter />
+        </Col>
+        <Col
+          xs={12}
+          sm={6}
+          lg={4}
+          className="d-flex flex-col justify-content-lg-center align-items-center justify-content-sm-start mb-2 mb-sm-0"
+        >
+          <PaginationOptions />
+        </Col>
+        <Col
+          xs={12}
+          sm={6}
+          lg={4}
+          className="d-flex flex-col justify-content-end align-items-end"
+        >
+          <Pagination />
+        </Col>
+      </Row>
+      <Table>
+        <TableHeader />
+        <TableBody />
+      </Table>
+    </DatatableWrapper>
+  );
 }
-export default Table;
