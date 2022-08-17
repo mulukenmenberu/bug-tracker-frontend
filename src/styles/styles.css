@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     gap:2rem;
+    margin-top: 1rem;
 }
 .menu-item{
     display: flex;
@@ -156,7 +157,7 @@ margin-left: 1rem;
 .main-cards{
     background-color: #2d2d34;
     display: flex;
-    width:40vh;
+    width:35vh;
     margin-left: 1rem;
     border-radius: 1.5rem;
     gap:2rem;
@@ -169,7 +170,7 @@ margin-left: 1rem;
 .main-cards-one{
     background-color: #19191a;
     display: flex;
-    width:60vh;
+    width:78vh;
     margin-left: 1rem;
     border-radius: 1.5rem;
     gap:2rem;
@@ -205,3 +206,325 @@ margin-left: 1rem;
 .table .tbody, .table .thead{
     color:#ffffff
 }
+.responsive-menu{
+    float: right;
+    margin-top: 0.5rem;
+    z-index: 9;
+    margin-right: 10px;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .main-content{
+        display: flex;
+        border-radius: 2rem;
+
+        overflow: hidden;
+        flex-direction: column;
+        color: #ffffff;
+        gap: 0.5rem;
+        padding: 1rem;
+        overflow-y: auto;
+    
+    }
+    .left-container{
+        right: 95%;
+
+    }
+    .right-container{
+        border-radius: 1.5rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .table-container{
+        border-radius: 1.5rem;
+        width: 100%;
+        font-size: medium;
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+    .table{
+        overflow-x:scroll;
+        width: 100px;
+  
+        gap: 2rem;
+        margin-top: 50px;
+    }
+  .main-cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    align-items: center;
+  }
+  .main-cards{
+    background-color: #2d2d34;
+    display: flex;
+    width:100%;
+    margin-left: 1rem;
+    border-radius: 1.5rem;
+    gap:2rem;
+   
+    box-shadow: 5px 5px #373fb1;
+    transition:  transform .2s;;
+    color:white;
+    font-size: x-small;
+}
+.main-cards-one{
+    display: flex;
+    width:100%;
+    border-radius: 1.5rem;
+    gap:2rem;
+    padding: 0.5rem;
+    transition:  transform .2s;;
+    color:white;
+    font-size: x-small;
+}
+.action-pane-one{
+    background-color: #19191a;
+    box-shadow: 1px 1px #C12267;
+    border-radius: 1.5rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.action-pane-two{
+    background-color: #19191a;
+    box-shadow: 1px 1px #C12267;
+    border-radius: 1.5rem;
+    height: 30vh;  
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.action-pane-three{
+    background-color: #19191a;
+    box-shadow: 1px 1px #C12267;
+    border-radius: 1.5rem;
+    height: 15vh;  
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+  }
+  
+/* For 1024 Resolution */  
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{
+        .main-content{
+            display: flex;
+            border-radius: 2rem;
+    
+            overflow: hidden;
+            flex-direction: column;
+            color: #ffffff;
+            gap: 0.5rem;
+            padding: 1rem;
+            overflow-y: auto;
+        
+        }
+        .left-container{
+            right: 95%;
+    
+        }
+        .right-container{
+            border-radius: 1.5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .table-container{
+            border-radius: 1.5rem;
+            width: 100%;
+            font-size: medium;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        .table{
+            overflow-x:scroll;
+            width: 100px;
+      
+            gap: 2rem;
+            margin-top: 50px;
+        }
+      .main-cards-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        align-items: center;
+      }
+      .main-cards{
+        background-color: #2d2d34;
+        display: flex;
+        width:100%;
+        margin-left: 1rem;
+        border-radius: 1.5rem;
+        gap:2rem;
+       
+        box-shadow: 5px 5px #373fb1;
+        transition:  transform .2s;;
+        color:white;
+        font-size: x-small;
+    }
+    .main-cards-one{
+        display: flex;
+        width:100%;
+        border-radius: 1.5rem;
+        gap:2rem;
+        padding: 0.5rem;
+        transition:  transform .2s;;
+        color:white;
+        font-size: x-small;
+    }
+    .action-pane-one{
+        background-color: #19191a;
+        box-shadow: 1px 1px #C12267;
+        border-radius: 1.5rem;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .action-pane-two{
+        background-color: #19191a;
+        box-shadow: 1px 1px #C12267;
+        border-radius: 1.5rem;
+        height: 30vh;  
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .action-pane-three{
+        background-color: #19191a;
+        box-shadow: 1px 1px #C12267;
+        border-radius: 1.5rem;
+        height: 15vh;  
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}  
+
+/* If you're looking to supply different graphics or choose different typography for the lower resolution iPad display, the media queries below will work. */  
+/* Orientation : Landscape */  
+@media only screen   
+and (orientation : landscape)   
+and (-webkit-min-device-pixel-ratio: 1)  
+and (min-device-width : 768px)   
+and (max-device-width : 1007px)  
+{
+        .main-content{
+            display: flex;
+            border-radius: 2rem;
+    
+            overflow: hidden;
+            flex-direction: column;
+            color: #ffffff;
+            gap: 0.5rem;
+            padding: 1rem;
+            overflow-y: auto;
+        
+        }
+        .left-container{
+            right: 95%;
+    
+        }
+        .right-container{
+            border-radius: 1.5rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .table-container{
+            border-radius: 1.5rem;
+            width: 100%;
+            font-size: medium;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+        .table{
+            overflow-x:scroll;
+            width: 100px;
+      
+            gap: 2rem;
+            margin-top: 50px;
+        }
+      .main-cards-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        align-items: center;
+      }
+      .main-cards{
+        background-color: #2d2d34;
+        display: flex;
+        width:100%;
+        margin-left: 1rem;
+        border-radius: 1.5rem;
+        gap:2rem;
+       
+        box-shadow: 5px 5px #373fb1;
+        transition:  transform .2s;;
+        color:white;
+        font-size: x-small;
+    }
+    .main-cards-one{
+        display: flex;
+        width:100%;
+        border-radius: 1.5rem;
+        gap:2rem;
+        padding: 0.5rem;
+        transition:  transform .2s;;
+        color:white;
+        font-size: x-small;
+    }
+    .action-pane-one{
+        background-color: #19191a;
+        box-shadow: 1px 1px #C12267;
+        border-radius: 1.5rem;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .action-pane-two{
+        background-color: #19191a;
+        box-shadow: 1px 1px #C12267;
+        border-radius: 1.5rem;
+        height: 30vh;  
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .action-pane-three{
+        background-color: #19191a;
+        box-shadow: 1px 1px #C12267;
+        border-radius: 1.5rem;
+        height: 15vh;  
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}  
+

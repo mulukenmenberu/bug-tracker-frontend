@@ -13,11 +13,12 @@ function App() {
       <div className='nav-search'>
         <input type="text" placeholder='Search anything here'></input>
       </div>
+      <div className='scroll-content'>
       <MainPane/>
       <div className= "table-container">
       <TableData/>
       </div>
-      
+      </div>
     </div>
     <RightPane/>
    </div>

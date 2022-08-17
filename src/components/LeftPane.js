@@ -1,14 +1,19 @@
 import { NavBar } from '../data/NavBar';
 import bug from '../images/bug-logo.png'
 import React, { useState } from 'react';
+import {UilBars} from '@iconscout/react-unicons'
+
 const LeftPane = ()=>{
   const [isactive, setActive] = useState('Home')
     const changeActiveMenu = (title)=>{
       setActive(title)
     }
     return(
-        <div className="left-container">
+        <div className="left-container" style={{left:"5%"}}>
+          <div  className = 'responsive-menu'> <UilBars/></div>
         <div className='logo'>
+          
+         
           <div className = "logo-text">
             <img src = {bug} alt="Bug Tracker"/>
           
